@@ -27,7 +27,7 @@ angular.module('starter').controller('MapController',
         if(!InstructionsService.instructions.newLocations.seen) {
 
           var instructionsPopup = $ionicPopup.alert({
-            title: 'Add Locations',
+            title: 'Agregar posiciones',
             template: InstructionsService.instructions.newLocations.text
           });
           instructionsPopup.then(function(res) {
@@ -130,7 +130,7 @@ angular.module('starter').controller('MapController',
           $scope.map.markers.now = {
             lat:position.coords.latitude,
             lng:position.coords.longitude,
-            message: "You Are Here",
+            message: "Estás aquí",
             focus: true,
             draggable: false
           };
